@@ -1910,7 +1910,7 @@ span {
 }
 
 .footer-widgets-wrapper {
-  padding: 25px 0 55px;
+  padding: 15px ;
   position: relative;
   z-index: 9;
 }
@@ -2260,7 +2260,7 @@ span {
 }
 
 .main-header-wrapper {
-  display: flex;
+  display: flex;    justify-content: space-between;
   align-items: center;
   gap: 100px;
 }
@@ -3583,7 +3583,7 @@ span {
 .hero-1 {
   background-color: var(--bg);
   position: relative;
-  padding: 330px 0 60px;
+  padding: 150px 0 60px;
 }
 .hero-1 .container-fluid {
   padding: 0 150px;
@@ -6859,7 +6859,7 @@ input.main-search-input::placeholder {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 30px;
 }
 @media (max-width: 991px) {
@@ -7038,4 +7038,6 @@ input.main-search-input::placeholder {
 .testimonial-section-3 .array-button .array-next:hover {
   background-color: var(--header);
   color: var(--white);
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */.footerimg{
+  width: 150px;
+}
