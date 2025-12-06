@@ -36,53 +36,82 @@
     <body>
 
         <!-- Preloader Start -->
-        <div id="preloader" class="preloader">
-            <div class="animation-preloader">
-                <div class="spinner">                
-                </div>
-                <div class="txt-loading">
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
-                    </span>
-                    <span data-text-preloader="L" class="letters-loading">
-                        L
-                    </span>
-                    <span data-text-preloader="E" class="letters-loading">
-                        E
-                    </span>
-                    <span data-text-preloader="B" class="letters-loading">
-                        B
-                    </span>
-                    <span data-text-preloader="" class="letters-loading">
-                        
-                    </span>
-                    <span data-text-preloader="" class="letters-loading">
-                        
-                    </span>
-                </div>
-                <p class="text-center">Loading</p>
-            </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                </div>
-            </div>
+     <!-- PRELOADER -->
+<div id="preloader" class="preloader">
+    <div class="animation-preloader">
+        <div class="spinner"></div>
+
+        <div class="txt-loading">
+            <span data-text-preloader="A" class="letters-loading">A</span>
+            <span data-text-preloader="L" class="letters-loading">L</span>
+            <span data-text-preloader="E" class="letters-loading">E</span>
+            <span data-text-preloader="B" class="letters-loading">B</span>
         </div>
 
+        <p class="text-center">Loading</p>
+    </div>
+
+    <div class="loader">
+        <div class="row">
+            <div class="col-3 loader-section section">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section">
+                <div class="bg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PRELOADER CSS FIX -->
+<style>
+    /* Make ALEB text visible */
+    .preloader .letters-loading {
+        color: #000 !important; /* Change color here */
+        -webkit-text-stroke: 0px transparent !important;
+        font-weight: 700;
+        font-size: 40px;
+        display: inline-block;
+        opacity: 1;
+    }
+
+    .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .animation-preloader .spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #000;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+
         <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
+     
 
         <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top">
@@ -186,7 +215,7 @@
                 <div class="main-header-wrapper">
                     <div class="logo-image">
                         <a href="index.html">
-                            <img src="assets/img/logo/black-logo.png" alt="img">
+                            <img src="assets/img/logo/black-logo.png" alt="img"class="logo-image">
                         </a>
                     </div>
                     <!-- <div class="main-header-items">

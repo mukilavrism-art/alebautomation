@@ -2779,7 +2779,9 @@ span {
 .header-main .header-right {
   margin-left: 30px;
   gap: 30px;
-}
+}.logo-image{
+        width: 250px !important;
+    } 
 @media (max-width: 1399px) {
   .header-main .header-right {
     gap: 20px;
