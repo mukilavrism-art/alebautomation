@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="gramentheme">
+    <meta name="description" content="Xbuild - Constriction Html Template">
+    <!-- ======== Page title ============ -->
+    <title>ALEB Automation</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Splitting css -->
+    <link rel="stylesheet" href="assets/css/splitting.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+
+            <div class="txt-loading">
+                <span data-text-preloader="A" class="letters-loading">A</span>
+                <span data-text-preloader="L" class="letters-loading">L</span>
+                <span data-text-preloader="E" class="letters-loading">E</span>
+                <span data-text-preloader="B" class="letters-loading">B</span>
+            </div>
+
+            <p class="text-center">Loading</p>
+        </div>
+
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRELOADER CSS FIX -->
+    <style>
+        /* Make ALEB text visible */
+        .preloader .letters-loading {
+            color: #000 !important;
+            /* Change color here */
+            -webkit-text-stroke: 0px transparent !important;
+            font-weight: 700;
+            font-size: 40px;
+            display: inline-block;
+            opacity: 1;
+        }
+
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 99999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .animation-preloader .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #000;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rotate-icon {
+            display: inline-block;
+            transform: rotate(90deg);
+        }
+    </style>
+
+
+    <!--<< Mouse Cursor Start >>-->
+
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!-- Header Top Section Start -->
+    <!-- <div class="header-top-section section-bg pt-3 pb-3">
+            <div class="container-fluid">
+                <div class="header-top-wrapper">
+                    <span><i class="fa-regular fa-clock"></i> 09:00 am - 06:00 pm</span>
+                    <div class="social-icon d-flex align-items-center">
+                        <span>Follow Us:</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/black-logo.png" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <p class="text d-none d-xl-block">
+                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                        </p> -->
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">No.20 A, 1st Floor, Kamaraj, 1st Street, Srinivasa Nagar
+                                        padi, Chennai-600 050, India.</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:info@alebautomation.com"><span
+                                            class="mailto:info@alebautomation.com">info@alebautomation.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+91 99440 23565">+91 99440 23565</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="contact.html" class="theme-btn text-center">
+                                <span>Get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="main-header-wrapper">
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="assets/img/logo/black-logo.png" alt="img" class="logo-image">
+                    </a>
+                </div>
+                <!-- <div class="main-header-items">
+                        <div class="header-contact-info-area">
+                            <div class="contact-info-items">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="content">
+                                    <p>Office location</p>
+                                    <h3>
+                                        143, MGR Main Road, Kandhanchavadi,<br>
+Chennai - 600096, Tamil Nadu, India.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="contact-info-items">
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="content">
+                                    <p>send email</p>
+                                    <h3>
+                                        <a href="mailto:alebservices@gmail.com">alebservices@gmail.com</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="contact-info-items style-2">
+                                <div class="icon">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="content">
+                                    <p>call emergency</p>
+                                    <h3>
+                                        <a href="tel:+91 99405 49326">+91 99405 49326</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="header-button">
+                                <a href="contact.html" class="theme-btn">GAT A QUOTE <i class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+                        </div> -->
+                <div id="header-sticky" class="header-1">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/img/logo/black-logo.png" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="header-left">
+                                <div class="mean__menu-wrapper">
+                                    <div class="main-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+                                                <li class="has-dropdown active menu-thumb">
+                                                    <a href="index.html">
+                                                        Home
+                                                        <!-- <i class="fa-regular fa-plus"></i> -->
+                                                    </a>
+                                                    <!-- <ul class="submenu has-homemenu">
+                                                <li> -->
+                                                    <!-- <div class="homemenu-items">
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb">
+                                                                <img src="assets/img/header/home-1.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-one-page.html" class="theme-btn">
+                                                                        One Page
+                                                                    </a>
+                                                                </div>
+                                                            </div> -->
+                                                    <!-- <div class="homemenu-content text-center">
+                                                                <h4 class="homemenu-title">
+                                                                    Home 01
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="homemenu">
+                                                            <div class="homemenu-thumb mb-15">
+                                                                <img src="assets/img/header/home-2.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index-2.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-two-page.html" class="theme-btn">
+                                                                        One Page
+                                                                    </a>
+                                                                </div>
+                                                            </div> -->
+                                                    <!-- <div class="homemenu-content text-center">
+                                                                <h4 class="homemenu-title">
+                                                                    Home 02
+                                                                </h4>
+                                                            </div>
+                                                        </div> -->
+                                                    <!-- <div class="homemenu">
+                                                            <div class="homemenu-thumb mb-15">
+                                                                <img src="assets/img/header/home-3.jpg" alt="img">
+                                                                <div class="demo-button">
+                                                                    <a href="index-3.html" class="theme-btn">
+                                                                        Multi Page
+                                                                    </a>
+                                                                    <a href="index-three-page.html" class="theme-btn">
+                                                                        One Page
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="homemenu-content text-center">
+                                                                <h4 class="homemenu-title">
+                                                                    Home 03
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                    <!-- </li>
+                                            </ul> -->
+                                                </li>
+                                                <li class="has-dropdown active d-xl-none">
+                                                    <a href="team.html" class="border-none">
+                                                        Home
+
+                                                    </a>
+                                                    <!-- <ul class="submenu">
+                                                <li><a href="index.html">Home 01</a></li>
+                                                <li><a href="index-2.html">Home 02</a></li>
+                                            </ul> -->
+                                                </li>
+                                                <li>
+                                                    <a href="about.html">About Us</a>
+                                                </li>
+                                                <!-- <li class="has-dropdown">
+                                            <a href="news.html">
+                                                Pages
+                                                <i class="fa-regular fa-plus"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li class="has-dropdown">
+                                                    <a href="team-details.html">
+                                                        Our Team
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </a>
+                                                    <ul class="submenu">
+                                                        <li><a href="team.html">Our Team</a></li>
+                                                        <li><a href="team-details.html">Team Details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="pricing.html">Pricing</a></li>
+                                                <li><a href="faq.html">Faq's</a></li>
+                                                <li><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li> -->
+                                                <li>
+                                                    <a href="service.html">
+                                                        Services
+
+                                                    </a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="carrers.html">
+                                                        Careers
+
+                                                    </a>
+
+                                                </li>
+
+                                                <li>
+                                                    <a href="contact.html">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                <div class="header__hamburger d-xl-block my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fas fa-bars"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Breadcrumb Section Start -->
+            <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/breadcrumb-bg.jpg');">
+                <div class="shape-image float-bob-y">
+                    <img src="assets/img/vector.png" alt="img">
+                </div>
+                <div class="container">
+                    <div class="breadcrumb-wrapper-items">
+                        <div class="page-heading">
+                            <div class="breadcrumb-sub-title">
+                                <h1 class="wow fadeInUp" data-wow-delay=".3s">Careers</h1>
+                            </div>
+                            <!-- <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                            <li>
+                                <a href="index.html">
+                                Home
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-slash-forward"></i>
+                            </li>
+                            <li>
+                                Blog grid
+                            </li>
+                        </ul> -->
+                        </div>
+                        <div class="breadcrumb-image">
+                            <img src="assets/img/breadcrumb-image.png" alt="img" class="float-bob-x">
+                            <div class="bar-shape">
+                                <img src="assets/img/breadcrumb-bar.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Section Start -->
+            <section class="news-section fix section-padding">
+                <div class="container">
+                    <div class="row g-4">
+                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="news-box-items mt-0 active">
+                                
+                                <div class="news-content">
+                                    <ul class="post-list">
+                                        <li>Mechanical Engineer
+                                        </li>
+                                        <li>01 To 05-year experienced</li>
+                                    </ul>
+                                    <h4><a href="news-details.html">Minimum 1-year to 5-year experienced candidates can
+                                            apply
+                                        </a></h4>
+                                    <div class="author-items">
+                                        <div class="author-info">
+                                            <i class="fas fa-phone-alt rotate-icon"></i>
+                                            <div class="content">
+                                                <h6>Contact</h6>
+                                                <p>+91 99440 23565</p>
+                                            </div>
+                                        </div>
+                                        <a href="news-details.html" class="link-btn">Apply <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="news-box-items mt-0">
+                               
+                                <div class="news-content">
+                                    <ul class="post-list">
+                                        <li>Mechanical Design Engineer
+                                        </li>
+                                        <li>01 To 05-year experienced </li>
+                                    </ul>
+                                    <h4><a href="news-details.html">Minimum 1-year to 5-year experienced candidates can
+                                            apply
+                                        </a></h4>
+                                    <div class="author-items">
+                                        <div class="author-info">
+                                            <i class="fas fa-phone-alt rotate-icon"></i>
+                                            <div class="content">
+                                                <h6>Contact</h6>
+                                                <p>+91 99440 23565</p>
+                                            </div>
+                                        </div>
+                                        <a href="news-details.html" class="link-btn">Apply <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="news-box-items mt-0">
+                              
+                                <div class="news-content">
+                                    <ul class="post-list">
+                                        <li>We Welcome Freshers (Mechanical) (B.E., Diploma & ITI)
+                                        </li>
+                                        <li>0 To 01-year experienced</li>
+                                    </ul>
+                                    <h4><a href="news-details.html">Passionate to work with an aggressive growing startup with the ready to do mindset
+</a></h4>
+                                    <h4><a href="news-details.html">Must have passed out less than 1 year
+</a></h4>
+
+                                    <div class="author-items">
+                                        <div class="author-info">
+                                            <i class="fas fa-phone-alt rotate-icon"></i>
+                                            <div class="content">
+                                                <h6>Contact</h6>
+                                                <p>+91 99440 23565</p>
+                                            </div>
+                                        </div>
+                                        <a href="news-details.html" class="link-btn">Apply <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="news-box-items mt-0">
+                                <!-- <div class="news-image">
+                                <img src="assets/img/news/08.jpg" alt="img">
+                                <img src="assets/img/news/08.jpg" alt="img">
+                            </div> -->
+                                <div class="news-content">
+                                    <ul class="post-list">
+                                        <li>We welcome Freshers (EEE & E&I) (B.E., Diploma & ITI)
+
+                                        </li>
+                                        <li>0 To 01-year experienced </li>
+                                    </ul>
+                                     <p><a href="news-details.html">Electrical and Electronics Engineering & Instrumentation & Controlee Engineering </a></p>
+                                    <h4><a href="news-details.html">Passionate to work with an aggressive growing
+                                            startup with the ready to do mindset</a></h4>
+                                             <h4><a href="news-details.html">Must have passed out less than 1 year
+ </a></h4>
+                                              <h4><a href="news-details.html">Those who are interested in PLC programming or Industrial wiring can apply
+ </a></h4>
+                                              
+                                    <div class="author-items">
+                                        <div class="author-info">
+                                            <i class="fas fa-phone-alt rotate-icon"></i>
+                                            <div class="content">
+                                                <h6>Contact</h6>
+                                                <p>+91 99440 23565</p>
+                                            </div>
+                                        </div>
+                                        <a href="news-details.html" class="link-btn">Apply<i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="news-box-items mt-0">
+                                <!-- <div class="news-image">
+                                <img src="assets/img/news/04.jpg" alt="img">
+                                <img src="assets/img/news/04.jpg" alt="img">
+                            </div> -->
+                                <div class="news-content">
+                                    <ul class="post-list">
+                                        <li>PLC – Programmer </li>
+                                        <li>01 To 05-year experienced </li>
+                                    </ul>
+                                    <h4><a href="news-details.html">Minimum 1-year to 5-year experienced candidates can
+                                            apply
+                                        </a></h4>
+                                    <h4><a href="news-details.html">On hand programming experience mandatory
+
+                                        </a></h4>
+                                    <div class="author-items">
+                                        <div class="author-info">
+                                            <i class="fas fa-phone-alt rotate-icon"></i>
+                                            <div class="content">
+
+
+                                                <h6>Contact</h6>
+                                                <p>+91 99440 23565</p>
+                                            </div>
+                                        </div>
+                                        <a href="news-details.html" class="link-btn">Apply <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                        
+                      
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer Section Start -->
+            <footer class="footer-section bg-cover bg-cover" style="background-image: url('assets/img/footer/bg.jpg');">
+                <div class="container">
+                    <div class="contact-info-area">
+                        <a href="index.html" class="logo-img wow fadeInUp" data-wow-delay=".2s">
+                            <img src="assets/img/logo/white-logo.png" alt="img" class="footerimg">
+                        </a>
+                        <div class="contact-info-items wow fadeInUp" data-wow-delay=".4s">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="content">
+                                <p>Office location</p>
+                                <h3>
+
+                                    No.20 A, 1st Floor, Kamaraj, 1st Street, <br>Srinivasa Nagar padi, Chennai-600
+                                    050,<br> India.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="contact-info-items wow fadeInUp" data-wow-delay=".6s">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <p>send email</p>
+                                <h3>
+                                    <a href="mailto:info@alebautomation.com">info@alebautomation.com</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="contact-info-items wow fadeInUp" data-wow-delay=".8s">
+                            <div class="icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="content">
+                                <p>call emergency</p>
+                                <h3>
+                                    <a href="tel:+91 99440 23565">+91 99440 23565</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-widgets-wrapper">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <h5>About Company</h5>
+                                    </div>
+                                    <div class="footer-content">
+                                        <p>
+                                            ALEB Automation delivers high-performance industrial automation and
+                                            electrical solutions across India. We design, build, and support systems
+                                            that help factories work smarter, safer, and stronger — <br> today and for
+                                            years to come.
+                                        </p>
+                                        <div class="social-icon d-flex align-items-center">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <h5>Quick Link</h5>
+                                    </div>
+                                    <ul class="list-area">
+                                        <li>
+                                            <a href="index.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="service.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="carrers.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Projects
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <h5>Our Services</h5>
+                                    </div>
+                                    <ul class="list-area">
+                                        <li>
+                                            <a href="PLC-Programming.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                PLC Programming
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Automation-Systems.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Automation Systems
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Installation-and-Commissioning.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Installation & Commissioning
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Conveyor-Systems.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Conveyor Systems
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Maintenance-and-Support.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Maintenance & Support
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="PLC-Manufacturing.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                PLC Manufacturing
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <h5>Quick Link</h5>
+                                    </div>
+                                    <ul class="list-area">
+                                        <li>
+                                            <a href="about.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                        <!-- <li>
+                                                <a href="news.html">
+                                                    <i class="fa-solid fa-chevrons-right"></i>
+                                                    Blog & News
+                                                </a>
+                                            </li> -->
+                                        <li>
+                                            <a href="faq.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                FAQ’S
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">
+                                                <i class="fa-solid fa-chevrons-right"></i>
+                                                Login / Register
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".8s">
+                                <div class="single-footer-widget">
+                                    <!-- <div class="widget-head">
+                                            <h5>Instagram</h5>
+                                        </div> -->
+                                    <!-- <div class="footer-gallery">
+                                            <div class="gallery-wrap">
+                                                <div class="gallery-item">
+                                                    <div class="thumb">
+                                                        <a href="assets/img/footer/gallery-1.jpg" class="img-popup">
+                                                            <img src="assets/img/footer/gallery-1.jpg" alt="gallery-img">
+                                                            <div class="icon">
+                                                                <i class="far fa-plus"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="thumb">
+                                                        <a href="assets/img/footer/gallery-2.jpg" class="img-popup">
+                                                            <img src="assets/img/footer/gallery-2.jpg" alt="gallery-img">
+                                                            <div class="icon">
+                                                                <i class="far fa-plus"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="thumb">
+                                                        <a href="assets/img/footer/gallery-3.jpg" class="img-popup">
+                                                            <img src="assets/img/footer/gallery-3.jpg" alt="gallery-img">
+                                                            <div class="icon">
+                                                                <i class="far fa-plus"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="gallery-item">
+                                                    <div class="thumb">
+                                                        <a href="assets/img/footer/gallery-4.jpg" class="img-popup">
+                                                            <img src="assets/img/footer/gallery-4.jpg" alt="gallery-img">
+                                                            <div class="icon">
+                                                                <i class="far fa-plus"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="thumb">
+                                                        <a href="assets/img/footer/gallery-5.jpg" class="img-popup">
+                                                            <img src="assets/img/footer/gallery-5.jpg" alt="gallery-img">
+                                                            <div class="icon">
+                                                                <i class="far fa-plus"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="thumb">
+                                                        <a href="assets/img/footer/gallery-6.jpg" class="img-popup">
+                                                            <img src="assets/img/footer/gallery-6.jpg" alt="gallery-img">
+                                                            <div class="icon">
+                                                                <i class="far fa-plus"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="footer-bottom">
+                                <p>© <a href="index.html">ALEB Automation</a> 2025. All Rights Reserved. </p>
+                            </div>
+                        </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Gsap Js >>-->
+    <script src="assets/js/gsap/gsap.js"></script>
+    <!--<< Gsap Scroll Js >>-->
+    <script src="assets/js/gsap/gsap-scroll-to-plugin.js"></script>
+    <!--<< Gsap Scroll Smoother Js >>-->
+    <script src="assets/js/gsap/gsap-scroll-smoother.js"></script>
+    <!--<< Gsap Scroll Trigger Js >>-->
+    <script src="assets/js/gsap/gsap-scroll-trigger.js"></script>
+    <!-- Splitting Js -->
+    <script src="assets/js/splitting.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Splitting Animation Js >>-->
+    <script src="assets/js/splitting-animation.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

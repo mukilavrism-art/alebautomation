@@ -4524,8 +4524,11 @@ span {
 .news-box-items:hover .news-content h4 a, .news-box-items.active .news-content h4 a {
   color: var(--white);
 }
-.news-box-items:hover .news-content h4 a:hover, .news-box-items.active .news-content h4 a:hover {
-  color: var(--theme);
+.news-box-items:hover .news-content h4 a:hover, .news-box-items.active .news-content h4 a :hover {
+  color: var(--white);
+}
+.news-box-items:hover .news-content P a:hover, .news-box-items.active .news-content p a :hover {
+  color: var(--white);
 }
 .news-box-items:hover .news-content .author-items, .news-box-items.active .news-content .author-items {
   border-top: 1px solid var(--white);
